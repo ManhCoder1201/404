@@ -19,3 +19,5 @@ Route::get('/', function () {
 route::get('cart', function(){
     return view('cart');
 });
+route::post('login-test',[LoginController::class, 'postLogin']);
+route::post('register-test',[LoginController::class, 'postRegister']);

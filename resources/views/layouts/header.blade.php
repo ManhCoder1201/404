@@ -71,12 +71,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="form-signup" class="form-signin mt-2">
+                <form id="form-signup" class="form-signin mt-2" method="post">
                     <div class="form-label-group">
-                        <input type="text" class="form-control" placeholder="username... " name="username" required autofocus>
-                    </div>
-                    <div class="form-label-group">
-                        <input type="text" class="form-control" placeholder="fullName... " name="fullname" required autofocus>
+                        <input type="text" class="form-control" placeholder="username... " name="name" required autofocus>
                     </div>
                     <div class="form-label-group">
                         <input type="email" class="form-control" placeholder="email... " name="email" required>
@@ -86,7 +83,7 @@
                     </div>
 
             </div>
-            <button class="btn btn-lg btn-block btn-signin text-uppercase text-white mt-3" type="submit" style="background: #F5A623">Login</button>
+            <button class="btn btn-lg btn-block btn-signin text-uppercase text-white mt-3" type="submit" style="background: #F5A623">Register</button>
 
             <div class="custom-control custom-checkbox">
                 <p class="text-center"></p>
@@ -119,9 +116,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="form-signin" class="form-signin mt-2">
+                <form id="form-signin" class="form-signin mt-2" method="post">
                     <div class="form-label-group">
-                        <input type="email" class="form-control" placeholder="username..." name="username" required autofocus>
+                        <input type="email" class="form-control" placeholder="Email..." name="email" required autofocus>
                     </div>
 
                     <div class="form-label-group">
