@@ -1,8 +1,8 @@
 <?php
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
-use App\Mdels\user;
+use App\Models\user;
 class LoginController extends Controller
 {
      public function getLogin(){
@@ -23,7 +23,7 @@ class LoginController extends Controller
     }
     public function postRegister(Request $request){
         $user = new user;
-        $user->user = $request->user;
+        $user->name = $request->name;
         $user->email = $request-> email;
         $user->password = Hash::make($request->password);
         $user->role = $request->role;

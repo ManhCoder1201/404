@@ -71,7 +71,8 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="form-signup" class="form-signin mt-2" method="post">
+                <form action="register-test" id="form-signup" class="form-signin mt-2" method="post">
+                    @csrf
                     <div class="form-label-group">
                         <input type="text" class="form-control" placeholder="username... " name="name" required autofocus>
                     </div>
@@ -116,7 +117,8 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="form-signin" class="form-signin mt-2" method="post">
+                <form action="/login-test" id="form-signin" class="form-signin mt-2" method="post">
+                    @csrf
                     <div class="form-label-group">
                         <input type="email" class="form-control" placeholder="Email..." name="email" required autofocus>
                     </div>
