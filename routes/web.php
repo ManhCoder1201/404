@@ -1,9 +1,8 @@
 <?php
-
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,5 +20,10 @@ Route::get('/', function () {
 route::get('cart', function(){
     return view('cart');
 });
+route::get('logout',[LoginController::class, 'getLogout']);
+
 route::post('login-test',[LoginController::class, 'postLogin']);
 route::post('register-test',[LoginController::class, 'postRegister']);
+// product
+route::get('mng-product',[ProductController::class, 'viewProduct']);
+route::post('createproduct',[ProductController::class, 'createProduct']);

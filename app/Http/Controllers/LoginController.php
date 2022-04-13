@@ -3,6 +3,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Models\user;
+
+use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
      public function getLogin(){
@@ -11,7 +13,14 @@ class LoginController extends Controller
     public function postLogin(Request $request){
         $arr = ['email'=>$request->email,'password'=>$request->password];
         if(Auth::attempt($arr)){
-            return view('index');
+            if(Auth::user()->role =='admin'){
+                return view ('admin.index');
+            }
+            else {
+                return view('index');
+            }
+            
+            
         }
         else{
             dd('Login failed');
@@ -19,15 +28,16 @@ class LoginController extends Controller
     }
     public  function getLogout(){
         Auth::logout();
-        return redirect()->intended('login');
+        return redirect()->intended('/');
     }
     public function postRegister(Request $request){
         $user = new user;
         $user->name = $request->name;
         $user->email = $request-> email;
         $user->password = Hash::make($request->password);
-        $user->role = $request->role;
+        $user->role = 'user';
         $user->save();
-        return redirect()->back()->with('thanh conng','tao thanh công');
+        // return redirect()->with('thanh conng','tao thanh công');//
+        return redirect()->intended('/');
     }
 }

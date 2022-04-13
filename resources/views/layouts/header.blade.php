@@ -6,7 +6,7 @@
 <nav class="navbar navbar-expand-md bg-white navbar-light">
     <div class="container">
         <!-- logo  -->
-        <a class="navbar-brand" href="index.html" style="color: #CF111A;"><b>Buy</b>.qq</a>
+        <a class="navbar-brand" href="/" style="color: #CF111A;"><b>Buy</b>.qq</a>
 
         <!-- navbar-toggler  -->
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -15,7 +15,7 @@
             <!-- form tìm kiếm  -->
             <form class="form-inline ml-auto my-2 my-lg-0 mr-3">
                 <div class="input-group" style="width: 520px;">
-                    <input type="text" class="form-control" aria-label="Small" placeholder="Nhập sách cần tìm kiếm...">
+                    <input type="text" class="form-control" aria-label="Small" placeholder="Nhập sản phẩm cần tìm kiếm...">
                     <div class="input-group-append">
                         <button type="button" class="btn" style="background-color: #CF111A; color: white;">
                             <i class="fa fa-search"></i>
@@ -31,11 +31,16 @@
                         <a href="#" class="btn btn-secondary rounded-circle">
                             <i class="fa fa-user"></i>
                         </a>
-                        <a class="nav-link text-dark text-uppercase" href="#" style="display:inline-block">account</a>
+                        @if(Auth::check())
+                        <a class="nav-link text-dark text-uppercase" href="#" style="display:inline-block">{{auth()->user()->name}}</a> @else
+                        <a class="nav-link text-dark text-uppercase" href="#" style="display:inline-block">account</a> @endif
+
                     </li>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        @if(Auth::check())
+                        <a class="dropdown-item nutdangky text-center mb-2" href="/logout">Logout</a> @else
                         <a class="dropdown-item nutdangky text-center mb-2" href="#" data-toggle="modal" data-target="#formdangky">Register</a>
-                        <a class="dropdown-item nutdangnhap text-center" href="#" data-toggle="modal" data-target="#formdangnhap">Login</a>
+                        <a class="dropdown-item nutdangnhap text-center" href="#" data-toggle="modal" data-target="#formdangnhap">Login</a> @endif
                     </div>
                 </div>
                 <li class="nav-item giohang">
@@ -82,13 +87,11 @@
                     <div class="form-label-group">
                         <input type="password" class="form-control" placeholder="password.... " name="password" required>
                     </div>
-
             </div>
             <button class="btn btn-lg btn-block btn-signin text-uppercase text-white mt-3" type="submit" style="background: #F5A623">Register</button>
 
             <div class="custom-control custom-checkbox">
                 <p class="text-center"></p>
-                <a href="#" class="text-decoration-none text-center" style="color: #F5A623">Terms of Service & Privacy Policy</a>
             </div>
             </form>
         </div>
