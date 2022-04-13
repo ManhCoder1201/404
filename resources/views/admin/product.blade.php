@@ -40,7 +40,5 @@
     </tbody>
   </table>
 </div>
-
-
 @include('admin.management.mngProduct')
 @stop

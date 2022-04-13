@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -9,7 +9,7 @@
 
 body,
 html {
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
 }
 
 .navbar-nav li .nav-link {
@@ -19,7 +19,7 @@ html {
 }
 
 .navbar input.form-control {
-    border: 2px solid #CF111A!important;
+    border: 2px solid #cf111a !important;
 }
 
 li.nav-item a {
@@ -27,7 +27,7 @@ li.nav-item a {
 }
 
 li.nav-item:hover a {
-    color: #F5A623!important;
+    color: #f5a623 !important;
 }
 
 a.nav-link {
@@ -47,7 +47,7 @@ a.nav-link {
 }
 
 .navbar-expand-md .navbar-nav .nav-link.giohang {
-    padding-right: 0!important;
+    padding-right: 0 !important;
 }
 
 i.fa.fa-shopping-cart {
@@ -67,7 +67,7 @@ a.btn.btn-secondary.rounded-circle {
     height: 18px;
     width: 18px;
     border-radius: 50%;
-    background: #F5A623;
+    background: #f5a623;
     font-size: 12px;
     position: relative;
     left: 19px;
@@ -76,7 +76,7 @@ a.btn.btn-secondary.rounded-circle {
 }
 
 .nav-item.giohang:hover .cart-amount {
-    background: #CF111A;
+    background: #cf111a;
     color: white;
 }
 
@@ -86,7 +86,7 @@ a.btn.btn-secondary.rounded-circle {
 }
 
 a.dropdown-item {
-    background: #F5A623;
+    background: #f5a623;
     border-radius: 4px;
     font-size: 14px;
     color: white;
@@ -94,13 +94,13 @@ a.dropdown-item {
 }
 
 a.dropdown-item:hover {
-    background: #F5A623;
+    background: #f5a623;
     color: white;
-    box-shadow: 0px 2px 5px #F5A623;
+    box-shadow: 0px 2px 5px #f5a623;
 }
 
 .navbar-nav .nav-item.active a {
-    color: #F5A623;
+    color: #f5a623;
 }
 
 .nutcuonlen {
@@ -135,7 +135,7 @@ ul.tabs li.tab a {
 }
 
 ul.tabs li:hover a {
-    color: #F5A623;
+    color: #f5a623;
 }
 
 ul.tabs li:hover {
@@ -148,13 +148,13 @@ ul.tabs li hr {
     top: 0px;
     left: 25%;
     visibility: hidden;
-    border-top: 2px solid #F5A623;
+    border-top: 2px solid #f5a623;
     transition: 0.2s;
 }
 
 ul.tabs li:hover hr {
     visibility: visible;
-    border-top: 2px solid #F5A623;
+    border-top: 2px solid #f5a623;
     width: 100%;
     left: 0;
 }
@@ -170,12 +170,12 @@ ul.tabs li {
 }
 
 ul.tabs li.active a {
-    color: #F5A623;
+    color: #f5a623;
 }
 
 ul.tabs li.active hr {
     visibility: visible;
-    border-top: 2px solid #F5A623;
+    border-top: 2px solid #f5a623;
     width: 100%;
     left: 0;
 }
@@ -192,7 +192,7 @@ ul.tabs li.active hr {
 
 .form-signin .btn {
     font-size: 80%;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: bold;
     padding: 1rem;
     transition: all 0.2s;
@@ -219,7 +219,7 @@ ul.tabs li.active hr {
 }
 
 .btn-signin:hover {
-    color: black!important;
+    color: black !important;
 }
 
 #formdangky .form-signin p {
@@ -248,7 +248,7 @@ label.error {
 /* .duoinavbar  */
 
 .duoinavbar {
-    background-color: #CF111A;
+    background-color: #cf111a;
 }
 
 .benphai.float-right {
@@ -312,7 +312,7 @@ label.error {
 }
 
 .categorycontent>ul>li:hover {
-    background-color: #CF111A;
+    background-color: #cf111a;
     cursor: pointer;
 }
 
@@ -330,7 +330,7 @@ label.error {
 }
 
 .categorycontent>ul>li:last-child {
-    border-bottom: none
+    border-bottom: none;
 }
 
 .categorycontent ul li a {
@@ -391,7 +391,7 @@ ul i.fa.fa-chevron-right {
 ul li a.header {
     font-size: 15px;
     padding-left: 33px;
-    color: #CF111A;
+    color: #cf111a;
 }
 
 .categorycontent ul li ul .content {
@@ -406,7 +406,7 @@ ul li a.header {
 }
 
 .categorycontent ul li ul .content li a:hover {
-    color: #F5A623;
+    color: #f5a623;
 }
 
 
@@ -441,7 +441,7 @@ ul li a.header {
 a.btn.btn-warning.btn-sm.text-white {
     height: 25px;
     width: 77px;
-    background: #F5A623;
+    background: #f5a623;
     font-size: 11px;
 }
 
@@ -454,6 +454,8 @@ a.btn.btn-warning.btn-sm.text-white {
 
 img.card-img-top.anh {
     position: relative;
+    width: 204px;
+    height: 204px;
     top: 15px;
     transition: 0.3s;
 }
@@ -462,7 +464,7 @@ ul span.text-muted {
     font-size: 11px;
     padding-top: 6px;
     padding-left: 12px;
-    color: #919191!important;
+    color: #919191 !important;
 }
 
 i.fa.fa-star {
@@ -471,11 +473,11 @@ i.fa.fa-star {
 }
 
 li.active .fa-star {
-    color: #F5A623;
+    color: #f5a623;
 }
 
 .sale {
-    background: #F5A623;
+    background: #f5a623;
     border-radius: 6px;
     font-size: 11px;
     color: white;
@@ -487,7 +489,7 @@ li.active .fa-star {
 
 .giacu.text-muted {
     font-size: 13px;
-    color: #919191!important;
+    color: #919191 !important;
 }
 
 .giamoi {
@@ -534,7 +536,7 @@ h3.card-title.ten {
 }
 
 .card:hover .ten {
-    color: #F5A623;
+    color: #f5a623;
 }
 
 
@@ -578,7 +580,7 @@ h3.card-title.ten {
 .sachnendoc a.detail {
     font-size: 13px;
     text-decoration: none;
-    color: #F5A623;
+    color: #f5a623;
 }
 
 .sachnendoc .thoigian {
@@ -661,7 +663,7 @@ footer .row a {
 }
 
 footer .row a:hover {
-    color: #F5A623;
+    color: #f5a623;
 }
 
 footer .header {
@@ -672,21 +674,21 @@ footer .header {
 
 /* het css cho footer  */
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .navbar form .input-group {
-        width: 100%!important;
+        width: 100% !important;
     }
     .navbar ul li a.nav-link {
-        margin-left: 0.25rem!important;
+        margin-left: 0.25rem !important;
     }
     .navbar ul li.account {
-        border-top: 1px dashed #CF111A;
-        border-bottom: 1px dashed #CF111A;
+        border-top: 1px dashed #cf111a;
+        border-bottom: 1px dashed #cf111a;
         padding-bottom: 0.5rem;
         margin-bottom: 0.25rem;
     }
     .navbar ul li.giohang {
-        border-bottom: 1px dashed #CF111A;
+        border-bottom: 1px dashed #cf111a;
         padding-bottom: 0.5rem;
         margin-right: 8px;
     }

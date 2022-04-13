@@ -38,7 +38,7 @@
                     </li>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         @if(Auth::check())
-                        <a class="dropdown-item nutdangky text-center mb-2" href="/logout">Logout</a> @else
+                        <a class="dropdown-item nutdangky text-center mb-2" href="logout">Logout</a> @else
                         <a class="dropdown-item nutdangky text-center mb-2" href="#" data-toggle="modal" data-target="#formdangky">Register</a>
                         <a class="dropdown-item nutdangnhap text-center" href="#" data-toggle="modal" data-target="#formdangnhap">Login</a> @endif
                     </div>
@@ -120,7 +120,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/login-test" id="form-signin" class="form-signin mt-2" method="post">
+                <form action="login" id="form-signin" class="form-signin mt-2" method="post">
                     @csrf
                     <div class="form-label-group">
                         <input type="email" class="form-control" placeholder="Email..." name="email" required autofocus>

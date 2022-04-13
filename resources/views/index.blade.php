@@ -44,6 +44,7 @@
  
 
     <!-- khoi sach moi  -->
+
     <section class="_1khoi sachmoi bg-white">
         <div class="container">
             <div class="noidung" style=" width: 100%;">
@@ -56,18 +57,19 @@
                 </div>
                 <div class="khoisanpham" style="padding-bottom: 2rem;">
                     <!-- 1 san pham -->
+                    @foreach($product as $value)
                     <div class="card">
                         <a href="Lap-trinh-ke-hoach-kinh-doanh-hieu-qua.html" class="motsanpham"
                             style="text-decoration: none; color: black;" data-toggle="tooltip" data-placement="bottom"
                             title="Lập Kế Hoạch Kinh Doanh Hiệu Quả">
-                            <img class="card-img-top anh" src="images/lap-ke-hoach-kinh-doanh-hieu-qua.jpg"
+                            <img class="card-img-top anh" src="images/{{$value -> productImage}}"
                                 alt="lap-ke-hoach-kinh-doanh-hieu-qua">
                             <div class="card-body noidungsp mt-3">
-                                <h3 class="card-title ten">Lập Kế Hoạch Kinh Doanh Hiệu Quả</h3>
+                                <h3 class="card-title ten">{{$value -> productName}}</h3>
                                 <small class="tacgia text-muted">Brian Finch</small>
                                 <div class="gia d-flex align-items-baseline">
-                                    <div class="giamoi">111.200 ₫</div>
-                                    <div class="giacu text-muted">139.000 ₫</div>
+                                    <div class="giamoi">{{$value -> productPrice}} ₫</div>
+                                    
                                     <div class="sale">new</div>
                                 </div>
                                 <div class="danhgia">
@@ -83,7 +85,7 @@
                             </div>
                         </a>
                     </div>
-                    
+                    @endforeach
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"

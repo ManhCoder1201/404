@@ -13,7 +13,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/mng-product">
+            <a class="nav-link" href="mng-product">
               <span data-feather="shopping-cart"></span>Products
             </a>
           </li>
