@@ -13,9 +13,9 @@ class ProductController extends Controller
     public function index()
     {
         $product = Product::latest()->paginate(5);
-
-        return view('product.index', compact('products'))
-        ->with('i', (request()->input('page', 1) - 1) * 5);
+        $product = Product::all();
+        return view('product.index', compact('product'))
+         ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function create()
@@ -53,7 +53,7 @@ class ProductController extends Controller
             $newProduct->image = $fileName;
             $newProduct->category_id = $request->category;
             $newProduct->save();
-            return redirect()->route('products.index')
+            return redirect()->route('product.index')
             ->with('success', 'Product created successfully.');
             }
     }
